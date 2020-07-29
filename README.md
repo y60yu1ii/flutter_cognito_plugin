@@ -17,6 +17,15 @@ Since this plugin uses the native AWS sdk, the installation is a little more inv
 
 ### Android
 
+Add a fix to upgrade Amplify version
+
+https://github.com/aws-amplify/aws-sdk-android/issues/1761
+
+~~~
+I handled this issue by adding the latest version for AWSMobileClient
+implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.16.13'
+~~~
+
 Add an `awsconfiguration.json` file to `android/app/src/main/res/raw/awsconfiguration.json`.
 
 This is what one should look like :-
